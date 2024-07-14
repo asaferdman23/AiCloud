@@ -1,5 +1,4 @@
 // Library styles
-@import "bootstrap";
 
 // // Setup
 // @import "setup/variables";
@@ -8,9 +7,9 @@
 // @import "setup/typography";
 
 // // Basics
-@import "basics/base";
+@import "basics/_base";
 // @import "basics/helpers";
-@import "basics/layout";
+@import "basics/_layout";
 // @import "basics/links";
 // @import "basics/forms";
 
@@ -26,3 +25,6 @@
 // @import "views/StaysIndex";
 
 // Components
+@import "cmps/ChatSection.scss";
+@import "cmps/customButtonStyles.scss";
+@import "cmps/Loader.scss";

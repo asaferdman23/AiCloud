@@ -6,7 +6,8 @@ import React from "react";
 // import "../assets/styles/main.scss";
 // import Sidebar from "../cmps/Sidebar";
 
-const MainStayerLayout = () => {
+import ChatSection from "../cmps/ChatSection";
+const MainLayout = () => {
     // const location = useLocation().pathname;
     // console.log("THE LOCATION IS ", location);
     return (
@@ -18,11 +19,11 @@ const MainStayerLayout = () => {
                   {/* <Sidebar/> */}
               <div className="content-area">
                   <main className="main-container">
-                      {/* <Outlet /> */}
+                      <ChatSection/>
                   </main>
               </div>
           </div>
       </>
     );
 };
-export default MainStayerLayout;
+export default MainLayout;
