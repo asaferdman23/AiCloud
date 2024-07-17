@@ -37,8 +37,5 @@ npm install
 ```sh
 npm run dev
 
-4.To start the backend server, navigate to the Backend directory and run:
-node express.js
-
-Ensure you have set up your OpenAI API key in the Backend/express.js file before starting the backend server.
-Open your browser and navigate to http://localhost:3000 to see the application in action.
+4.Create .env file and add the API gateway URL to access the bridge adapter to the AI. For example:
+API_KEY='https://blahblah/openai/chat/stream'

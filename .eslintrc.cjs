@@ -1,3 +1,8 @@
+const webpack = require('webpack');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -18,17 +23,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-  module: {
-    rules: [
-      // Other rules...
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader', // Creates `style` nodes from JS strings
-          'css-loader',   // Translates CSS into CommonJS
-          'sass-loader'   // Compiles Sass to CSS
-        ],
-      },
-    ],
-  },
+  plugins: [
+    new webpack.DefinePlugin({
+      __API_KEY__: JSON.stringify(process.env.API_KEY),
+    }),
+  ],
 }
