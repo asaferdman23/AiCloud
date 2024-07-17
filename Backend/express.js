@@ -24,7 +24,7 @@ app.listen(port, () => {
 const apiKey = process.env.API_KEY;
 app.post('/chat-api',
     defaultMiddleware('openai', {
-    apiKey: "rHjj@-8lw1,LTsTJ8km@CvtCY@1_Ji6OIf5@J)e-",
+    apiKey: "",
     chatModel: 'gpt-3.5-turbo',
     }),
 );
